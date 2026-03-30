@@ -1,5 +1,5 @@
 public class Ksiazka {
-  
+  //aj
     private String tytul;
     private String autor;
     private int liczbaStron;
