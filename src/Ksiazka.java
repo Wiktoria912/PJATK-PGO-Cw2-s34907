@@ -27,4 +27,7 @@ public class Ksiazka {
     public boolean isDostepna() {
         return dostepna;
     }
+    public String getTytul() {
+        return tytul;
+    }
 }
