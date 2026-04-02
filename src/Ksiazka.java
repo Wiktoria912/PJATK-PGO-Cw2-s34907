@@ -4,30 +4,28 @@ public class Ksiazka {
     private String autor;
     private int liczbaStron;
     private boolean dostepna;
+    private int rokWydania;
+    private boolean czyWyporzyczona;
 
     public Ksiazka(String tytul, String autor, int liczbaStron, boolean dostepna) {
         this.tytul = tytul;
         this.autor = autor;
         this.liczbaStron = liczbaStron;
         this.dostepna = dostepna;
-    }
-    public void wypiszInfo() {
-        System.out.println("Książka: " + tytul + " | Autor: " + autor +
-                " | Stron: " + liczbaStron + " | Dostępna: " + dostepna);
-    }
-    public void wypozycz() {
-        this.dostepna = false;
-    }
-    public void zwroc() {
-        this.dostepna = true;
+        this.rokWydania;
+        this.czyWyporzyczona = false
     }
     public String getTytul() {
         return tytul;
     }
-    public boolean isDostepna() {
-        return dostepna;
+    public boolean isCzyWyporzyczona(){
+        return czyWyporzyczona;
     }
-    public String getTytul() {
-        return tytul;
+    public void setCzyWyporzyczona(boolean stan){
+        this.czyWyporzyczona = stan;
+    }
+    public void wyświetlInfo(){
+        Sti=ring status = czyWyporzyczona ? "[WYPOŻYCZONA"] : "[DOSTĘPNA]";
+System.out.println(status = "Tytuł: " + tytul + ", Autor: " + autor + " (" + rokWydania + ")");
     }
 }
